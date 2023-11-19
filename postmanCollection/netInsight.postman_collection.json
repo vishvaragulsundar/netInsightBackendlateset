@@ -1,0 +1,6162 @@
+{
+	"info": {
+		"_postman_id": "c50a1ea7-44b1-4411-9d52-d685b379323c",
+		"name": "netInsight",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2052070"
+	},
+	"item": [
+		{
+			"name": "Modelling",
+			"item": [
+				{
+					"name": "createDeviceMetaModel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deviceModel\": \"Shubham-1\",\r\n    \"partNumber\": \"Shubham\",\r\n    \"vendor\": \"Shubham\",\r\n    \"height\": 1,\r\n    \"depth\": 1,\r\n    \"width\": 1,\r\n    \"shelvesContained\": 0,\r\n    \"allowedCardList\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createDeviceMetaModel",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"createDeviceMetaModel"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createDeviceMetaModel",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"deviceModel\":\"TA3000\",\"partNumber\":\"EFGH12345\",\"vendor\":\"Adtran\",\"height\":10.5,\"depth\":11.2,\"width\":19.0,\"shelvesContained\":7,\"allowedCardList\":[\"OLT_Card\",\"ADSL_CARD\",\"GPON_CARD\"]}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createDeviceMetaModel",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createDeviceMetaModel"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 10:42:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": null,\n    \"deviceModel\": \"TA3000\",\n    \"partNumber\": \"EFGH98745\",\n    \"vendor\": \"Adtran\",\n    \"height\": 10.5,\n    \"depth\": 11.2,\n    \"width\": 19,\n    \"shelvesContained\": 17,\n    \"allowedCardList\": [\n        \"OLT_Card\",\n        \"ADSL_CARD\",\n        \"GPON_CARD\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "updateDeviceMetaModel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"deviceModel\":\"TA3000\",\"partNumber\":\"EFGH98745\",\"vendor\":\"Adtran\",\"height\":10.5,\"depth\":11.2,\"width\":19.0,\"shelvesContained\":17,\"allowedCardList\":[\"OLT_Card\",\"ADSL_CARD\",\"GPON_CARD\"]}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/updateDeviceMetaModel",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"updateDeviceMetaModel"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateDeviceMetaModel",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"deviceModel\":\"TA3000\",\"partNumber\":\"EFGH98745\",\"vendor\":\"Adtran\",\"height\":10.5,\"depth\":11.2,\"width\":19.0,\"shelvesContained\":17,\"allowedCardList\":[\"OLT_Card\",\"ADSL_CARD\",\"GPON_CARD\"]}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateDeviceMetaModel",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateDeviceMetaModel"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 10:42:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": null,\n    \"deviceModel\": \"TA3000\",\n    \"partNumber\": \"EFGH98745\",\n    \"vendor\": \"Adtran\",\n    \"height\": 10.5,\n    \"depth\": 11.2,\n    \"width\": 19,\n    \"shelvesContained\": 17,\n    \"allowedCardList\": [\n        \"OLT_Card\",\n        \"ADSL_CARD\",\n        \"GPON_CARD\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "getDeviceMetaModel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getDeviceMetaModel?deviceModel=TA5000-1",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"getDeviceMetaModel"
+							],
+							"query": [
+								{
+									"key": "deviceModel",
+									"value": "TA5000-1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getDeviceMetaModel",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getDeviceMetaModel?deviceModel=TA5000",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getDeviceMetaModel"
+									],
+									"query": [
+										{
+											"key": "deviceModel",
+											"value": "TA5000"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 12:00:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": null,\n    \"deviceModel\": \"TA5000\",\n    \"partNumber\": \"ABCD12345\",\n    \"vendor\": \"Adtran\",\n    \"height\": 10.5,\n    \"depth\": 11.2,\n    \"width\": 19,\n    \"shelvesContained\": 7,\n    \"allowedCardList\": [\n        \"OLT_Card\",\n        \"ADSL_CARD\",\n        \"GPON_CARD\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllModelsByVendor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getAllModels?vendor=oki",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getAllModels"
+							],
+							"query": [
+								{
+									"key": "vendor",
+									"value": "oki"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getDeviceMetaModel",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getDeviceMetaModel?deviceModel=TA5000",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getDeviceMetaModel"
+									],
+									"query": [
+										{
+											"key": "deviceModel",
+											"value": "TA5000"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 12:00:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": null,\n    \"deviceModel\": \"TA5000\",\n    \"partNumber\": \"ABCD12345\",\n    \"vendor\": \"Adtran\",\n    \"height\": 10.5,\n    \"depth\": 11.2,\n    \"width\": 19,\n    \"shelvesContained\": 7,\n    \"allowedCardList\": [\n        \"OLT_Card\",\n        \"ADSL_CARD\",\n        \"GPON_CARD\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteDeviceMetaModel",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/deleteDeviceMetaModel?deviceModel=TA3000",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"deleteDeviceMetaModel"
+							],
+							"query": [
+								{
+									"key": "deviceModel",
+									"value": "TA3000"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteDeviceMetaModel",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/deleteDeviceMetaModel?deviceModel=TA3000",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"deleteDeviceMetaModel"
+									],
+									"query": [
+										{
+											"key": "deviceModel",
+											"value": "TA3000"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 10:42:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "DeviceInstanceManager APIs",
+			"item": [
+				{
+					"name": "getDevice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getDevice?name=7360-Dev-1",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"getDevice"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "7360-Dev-1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getDevice",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getDevice?name=device123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getDevice"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "device123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 14:45:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 187,\n    \"name\": \"device123\",\n    \"deviceModel\": \"TA5000\",\n    \"location\": \"locationABCD\",\n    \"organisation\": \"Prodapt\",\n    \"customer\": \"Testcustomer\",\n    \"managementIp\": \"10.10.10.15\",\n    \"rackPosition\": \"1\",\n    \"operationalStatus\": \"Active\",\n    \"lifecycleStatus\": \"Active\",\n    \"reservationStatus\": \"unreserved\",\n    \"serialNumber\": \"987654321\",\n    \"shelves\": [],\n    \"device_TO_SHELF\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "dashboard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/dashboard",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"dashboard"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getDevice",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getDevice?name=device123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getDevice"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "device123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 14:45:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 187,\n    \"name\": \"device123\",\n    \"deviceModel\": \"TA5000\",\n    \"location\": \"locationABCD\",\n    \"organisation\": \"Prodapt\",\n    \"customer\": \"Testcustomer\",\n    \"managementIp\": \"10.10.10.15\",\n    \"rackPosition\": \"1\",\n    \"operationalStatus\": \"Active\",\n    \"lifecycleStatus\": \"Active\",\n    \"reservationStatus\": \"unreserved\",\n    \"serialNumber\": \"987654321\",\n    \"shelves\": [],\n    \"device_TO_SHELF\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "getDevicesInRack",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getDevicesInRack?rackName=VishvaRack",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getDevicesInRack"
+							],
+							"query": [
+								{
+									"key": "rackName",
+									"value": "VishvaRack"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDevicesInBuilding",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getDevice?name=device123",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getDevice"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "device123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDevSimple",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getDevSimple?name=device123",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getDevSimple"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "device123"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getDevice",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getDevice?name=device123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getDevice"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "device123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 14:45:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 187,\n    \"name\": \"device123\",\n    \"deviceModel\": \"TA5000\",\n    \"location\": \"locationABCD\",\n    \"organisation\": \"Prodapt\",\n    \"customer\": \"Testcustomer\",\n    \"managementIp\": \"10.10.10.15\",\n    \"rackPosition\": \"1\",\n    \"operationalStatus\": \"Active\",\n    \"lifecycleStatus\": \"Active\",\n    \"reservationStatus\": \"unreserved\",\n    \"serialNumber\": \"987654321\",\n    \"shelves\": [],\n    \"device_TO_SHELF\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "getDeviceAndShelves",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getShelvesOnDevice?name=device123",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getShelvesOnDevice"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "device123"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getDeviceAndShelves",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getDeviceAndShelves?name=device123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getDeviceAndShelves"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "device123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 14:45:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 187,\n    \"name\": \"device123\",\n    \"deviceModel\": \"TA5000\",\n    \"location\": \"locationABCD\",\n    \"organisation\": \"Prodapt\",\n    \"customer\": \"Testcustomer\",\n    \"managementIp\": \"10.10.10.15\",\n    \"rackPosition\": \"1\",\n    \"operationalStatus\": \"Active\",\n    \"lifecycleStatus\": \"Active\",\n    \"reservationStatus\": \"unreserved\",\n    \"serialNumber\": \"987654321\",\n    \"shelves\": [\n        {\n            \"id\": 198,\n            \"name\": \"device123_Shlef_6\",\n            \"shelfPosition\": 6,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        },\n        {\n            \"id\": 196,\n            \"name\": \"device123_Shlef_5\",\n            \"shelfPosition\": 5,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        },\n        {\n            \"id\": 194,\n            \"name\": \"device123_Shlef_4\",\n            \"shelfPosition\": 4,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        },\n        {\n            \"id\": 193,\n            \"name\": \"device123_Shlef_3\",\n            \"shelfPosition\": 3,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        },\n        {\n            \"id\": 191,\n            \"name\": \"device123_Shlef_2\",\n            \"shelfPosition\": 2,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        },\n        {\n            \"id\": 189,\n            \"name\": \"device123_Shlef_1\",\n            \"shelfPosition\": 1,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        },\n        {\n            \"id\": 200,\n            \"name\": \"device123_Shlef_7\",\n            \"shelfPosition\": 7,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        }\n    ],\n    \"device_TO_SHELF\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "getCompleteDevice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getCompleteDevice?name=device123",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getCompleteDevice"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "device123"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getDeviceAndShelves",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getDeviceAndShelves?name=device123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getDeviceAndShelves"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "device123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 14:45:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 187,\n    \"name\": \"device123\",\n    \"deviceModel\": \"TA5000\",\n    \"location\": \"locationABCD\",\n    \"organisation\": \"Prodapt\",\n    \"customer\": \"Testcustomer\",\n    \"managementIp\": \"10.10.10.15\",\n    \"rackPosition\": \"1\",\n    \"operationalStatus\": \"Active\",\n    \"lifecycleStatus\": \"Active\",\n    \"reservationStatus\": \"unreserved\",\n    \"serialNumber\": \"987654321\",\n    \"shelves\": [\n        {\n            \"id\": 198,\n            \"name\": \"device123_Shlef_6\",\n            \"shelfPosition\": 6,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        },\n        {\n            \"id\": 196,\n            \"name\": \"device123_Shlef_5\",\n            \"shelfPosition\": 5,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        },\n        {\n            \"id\": 194,\n            \"name\": \"device123_Shlef_4\",\n            \"shelfPosition\": 4,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        },\n        {\n            \"id\": 193,\n            \"name\": \"device123_Shlef_3\",\n            \"shelfPosition\": 3,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        },\n        {\n            \"id\": 191,\n            \"name\": \"device123_Shlef_2\",\n            \"shelfPosition\": 2,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        },\n        {\n            \"id\": 189,\n            \"name\": \"device123_Shlef_1\",\n            \"shelfPosition\": 1,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        },\n        {\n            \"id\": 200,\n            \"name\": \"device123_Shlef_7\",\n            \"shelfPosition\": 7,\n            \"operationalStatus\": \"unassigned\",\n            \"lifecycleStatus\": \"unassigned\",\n            \"reservationStatus\": \"unassigned\",\n            \"device\": null,\n            \"slot\": []\n        }\n    ],\n    \"device_TO_SHELF\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "createDevice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"device123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"locationABCD\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.15\",\r\n    \"rackPosition\": 1,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createDevice",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"createDevice"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createDevice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"locationABCD\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.13\",\r\n    \"rackPosition\": 1,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createDevice",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createDevice"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "289"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 13:05:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[Device{id:null, name:'device123', deviceModel:'TA5000', location:'locationABCD', organisation:'Prodapt', customer:'Testcustomer', managementIp:'10.10.10.13', rackPosition:'1', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved', serialNumber:'987654321'}]"
+						},
+						{
+							"name": "createDevice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"locationABCD\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.15\",\r\n    \"rackPosition\": 1,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createDevice",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createDevice"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "346"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:50:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Device with same name already exist, existingDeviceDetails: Device{id:187, name:'device123', deviceModel:'TA5000', location:'locationABCD', organisation:'Prodapt', customer:'Testcustomer', managementIp:'10.10.10.15', rackPosition:'1', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved', serialNumber:'987654321'}"
+						},
+						{
+							"name": "createDevice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123\",\r\n    \"deviceModel\": \"TA5000789\",\r\n    \"location\": \"locationABCD\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.15\",\r\n    \"rackPosition\": 1,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createDevice",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createDevice"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "62"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 08:36:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Device Meta-model doesn't exist for the device type: TA5000789"
+						}
+					]
+				},
+				{
+					"name": "updateDevice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"device123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"locationAB\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.11\",\r\n    \"rackPosition\": 1,\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/updateDevice",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"updateDevice"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateDevice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device1234\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"locationAB\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.11\",\r\n    \"rackPosition\": 1,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateDevice",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateDevice"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "288"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Mar 2023 13:15:43 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[Device{id:null, name:'device1234', deviceModel:'TA5000', location:'locationAB', organisation:'Prodapt', customer:'Testcustomer', managementIp:'10.10.10.11', rackPosition:'1', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved', serialNumber:'987654321'}]"
+						},
+						{
+							"name": "updateDevice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123456789\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"locationAB\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.11\",\r\n    \"rackPosition\": 1,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateDevice",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateDevice"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:51:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Device with the given name doesn't exist"
+						}
+					]
+				},
+				{
+					"name": "createDeviceOnRack",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Shubham-2-Dev-1\",\r\n    \"deviceModel\": \"Shubham-2\",\r\n    \"location\": \"Guindy\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Prodapt\",\r\n    \"managementIp\": \"10.10.10.19\",\r\n    \"rackPosition\": 2,\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createDeviceOnRack?rack=HuaweiRack",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"createDeviceOnRack"
+							],
+							"query": [
+								{
+									"key": "rack",
+									"value": "HuaweiRack"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createDeviceOnRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.15\",\r\n    \"rackPosition\": 1,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createDeviceOnRack?rack=testRack",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createDeviceOnRack"
+									],
+									"query": [
+										{
+											"key": "rack",
+											"value": "testRack"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:41:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[Device{id:188, name:'testDevice123', deviceModel:'TA5000', location:'Anna Nagar', organisation:'Prodapt', customer:'Testcustomer', managementIp:'10.10.10.15', rackPosition:'1', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved', serialNumber:'987654321'}]"
+						},
+						{
+							"name": "createDeviceOnRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.15\",\r\n    \"rackPosition\": 1,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createDeviceOnRack?rack=testRack13",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createDeviceOnRack"
+									],
+									"query": [
+										{
+											"key": "rack",
+											"value": "testRack13"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:51:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Given Rack doesn't exist"
+						},
+						{
+							"name": "createDeviceOnRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.15\",\r\n    \"rackPosition\": 1,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createDeviceOnRack?rack=testRack",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createDeviceOnRack"
+									],
+									"query": [
+										{
+											"key": "rack",
+											"value": "testRack"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "348"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:51:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Device with same name already exist, existingDeviceDetails: Device{id:188, name:'testDevice123', deviceModel:'TA5000', location:'Anna Nagar', organisation:'Prodapt', customer:'Testcustomer', managementIp:'10.10.10.25', rackPosition:'2', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved', serialNumber:'987654321'}"
+						}
+					]
+				},
+				{
+					"name": "updateDeviceOnRack",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"testDevice123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.25\",\r\n    \"rackPosition\": 1,\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/updateDeviceOnRack?rack=testRack",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"updateDeviceOnRack"
+							],
+							"query": [
+								{
+									"key": "rack",
+									"value": "testRack"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateDeviceOnRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.25\",\r\n    \"rackPosition\": 2,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateDeviceOnRack?rack=testRack",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateDeviceOnRack"
+									],
+									"query": [
+										{
+											"key": "rack",
+											"value": "testRack"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:43:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[Device{id:188, name:'testDevice123', deviceModel:'TA5000', location:'Anna Nagar', organisation:'Prodapt', customer:'Testcustomer', managementIp:'10.10.10.25', rackPosition:'2', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved', serialNumber:'987654321'}]"
+						},
+						{
+							"name": "updateDeviceOnRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice12345678\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.25\",\r\n    \"rackPosition\": 2,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateDeviceOnRack?rack=testRack",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateDeviceOnRack"
+									],
+									"query": [
+										{
+											"key": "rack",
+											"value": "testRack"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:52:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Device with the given name doesn't exist"
+						},
+						{
+							"name": "updateDeviceOnRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice12345678\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.25\",\r\n    \"rackPosition\": 2,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateDeviceOnRack?rack=testRack123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateDeviceOnRack"
+									],
+									"query": [
+										{
+											"key": "rack",
+											"value": "testRack123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:52:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Given Rack doesn't exist"
+						}
+					]
+				},
+				{
+					"name": "createDeviceOnBuilding",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SDX-611-ONU-1\",\r\n    \"deviceModel\": \"SDX-611-ONU\",\r\n    \"location\": \"Velachery\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Vignesh\",\r\n    \"managementIp\": \"\",\r\n    \"rackPosition\": 0,\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\",\r\n    \"serialNumber\": \"987654df\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createDeviceOnBuilding?building=CustomerBuilding",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"createDeviceOnBuilding"
+							],
+							"query": [
+								{
+									"key": "building",
+									"value": "CustomerBuilding"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateDeviceOnRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.25\",\r\n    \"rackPosition\": 2,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateDeviceOnRack?rack=testRack",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateDeviceOnRack"
+									],
+									"query": [
+										{
+											"key": "rack",
+											"value": "testRack"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:43:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[Device{id:188, name:'testDevice123', deviceModel:'TA5000', location:'Anna Nagar', organisation:'Prodapt', customer:'Testcustomer', managementIp:'10.10.10.25', rackPosition:'2', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved', serialNumber:'987654321'}]"
+						},
+						{
+							"name": "updateDeviceOnRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice12345678\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.25\",\r\n    \"rackPosition\": 2,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateDeviceOnRack?rack=testRack",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateDeviceOnRack"
+									],
+									"query": [
+										{
+											"key": "rack",
+											"value": "testRack"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:52:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Device with the given name doesn't exist"
+						},
+						{
+							"name": "updateDeviceOnRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice12345678\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.25\",\r\n    \"rackPosition\": 2,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateDeviceOnRack?rack=testRack123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateDeviceOnRack"
+									],
+									"query": [
+										{
+											"key": "rack",
+											"value": "testRack123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:52:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Given Rack doesn't exist"
+						},
+						{
+							"name": "createDeviceOnBuilding",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testBuildingDevice123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"testBuildingcustomer\",\r\n    \"managementIp\": \"10.10.10.25\",\r\n    \"rackPosition\": 1,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createDeviceOnBuilding?building=testBuilding",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createDeviceOnBuilding"
+									],
+									"query": [
+										{
+											"key": "building",
+											"value": "testBuilding"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 10 Apr 2023 15:33:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-04-10T21:03:30.5849098\",\n    \"message\": \"Device with same name already exist, existingDeviceDetails: Device{id:334, name:'testBuildingDevice123', deviceModel:'TA5000', location:'Anna Nagar', organisation:'Prodapt', customer:'testBuildingcustomer', managementIp:'10.10.10.25', rackPosition:'1', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved', serialNumber:'987654321'}\"\n}"
+						}
+					]
+				},
+				{
+					"name": "updateDeviceOnBuilding",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"testBuildingDevice123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"testBuildingcustomer\",\r\n    \"managementIp\": \"10.10.10.35\",\r\n    \"rackPosition\": 1,\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/updateDeviceOnBuilding?building=testBuilding",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"updateDeviceOnBuilding"
+							],
+							"query": [
+								{
+									"key": "building",
+									"value": "testBuilding"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateDeviceOnRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.25\",\r\n    \"rackPosition\": 2,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateDeviceOnRack?rack=testRack",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateDeviceOnRack"
+									],
+									"query": [
+										{
+											"key": "rack",
+											"value": "testRack"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:43:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[Device{id:188, name:'testDevice123', deviceModel:'TA5000', location:'Anna Nagar', organisation:'Prodapt', customer:'Testcustomer', managementIp:'10.10.10.25', rackPosition:'2', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved', serialNumber:'987654321'}]"
+						},
+						{
+							"name": "updateDeviceOnRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice12345678\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.25\",\r\n    \"rackPosition\": 2,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateDeviceOnRack?rack=testRack",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateDeviceOnRack"
+									],
+									"query": [
+										{
+											"key": "rack",
+											"value": "testRack"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:52:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Device with the given name doesn't exist"
+						},
+						{
+							"name": "updateDeviceOnRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice12345678\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"Testcustomer\",\r\n    \"managementIp\": \"10.10.10.25\",\r\n    \"rackPosition\": 2,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateDeviceOnRack?rack=testRack123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateDeviceOnRack"
+									],
+									"query": [
+										{
+											"key": "rack",
+											"value": "testRack123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:52:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Given Rack doesn't exist"
+						},
+						{
+							"name": "createDeviceOnBuilding",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testBuildingDevice123\",\r\n    \"deviceModel\": \"TA5000\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"organisation\": \"Prodapt\",\r\n    \"customer\": \"testBuildingcustomer\",\r\n    \"managementIp\": \"10.10.10.25\",\r\n    \"rackPosition\": 1,\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createDeviceOnBuilding?building=testBuilding",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createDeviceOnBuilding"
+									],
+									"query": [
+										{
+											"key": "building",
+											"value": "testBuilding"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 10 Apr 2023 15:33:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-04-10T21:03:30.5849098\",\n    \"message\": \"Device with same name already exist, existingDeviceDetails: Device{id:334, name:'testBuildingDevice123', deviceModel:'TA5000', location:'Anna Nagar', organisation:'Prodapt', customer:'testBuildingcustomer', managementIp:'10.10.10.25', rackPosition:'1', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved', serialNumber:'987654321'}\"\n}"
+						}
+					]
+				},
+				{
+					"name": "createCard",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Shubham-2-Dev-1_Card_1\",\r\n    \"shelfPosition\": 1,\r\n    \"slotPosition\": 5,\r\n    \"vendor\": \"Sandisk\",\r\n    \"cardModel\": \"MicroSD\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createCard?device=Shubham-2-Dev-1",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"createCard"
+							],
+							"query": [
+								{
+									"key": "device",
+									"value": "Shubham-2-Dev-1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createCard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123_Card_1\",\r\n    \"shelfPosition\": 1,\r\n    \"slotPosition\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"cardModel\": \"ADSL_CARD\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createCard?device=device123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createCard"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "device123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "222"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 08:23:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Card{id:221, name:'device123_Card_1', shelfPosition:1, slotPosition:1, vendor:'Adtran', cardModel:'ADSL_CARD', cardPartNumber:'1346789', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved'}"
+						},
+						{
+							"name": "createCard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123_Card_1\",\r\n    \"shelfPosition\": 1,\r\n    \"slotPosition\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"cardModel\": \"ADSL_CARD_1234\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createCard?device=device123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createCard"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "device123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "137"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 08:24:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Given card model: ADSL_CARD_1234 is not compatible with the device model, AllowedCardList on the device: [OLT_Card, ADSL_CARD, GPON_CARD]"
+						},
+						{
+							"name": "createCard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123_Card_1\",\r\n    \"shelfPosition\": 1,\r\n    \"slotPosition\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"cardModel\": \"ADSL_CARD_1234\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createCard?device=device123456",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createCard"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "device123456"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 08:25:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Device with the given name doesn't exist"
+						},
+						{
+							"name": "createCard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123_Card_1\",\r\n    \"shelfPosition\": 11,\r\n    \"slotPosition\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"cardModel\": \"ADSL_CARD\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createCard?device=device123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createCard"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "device123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "25"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 08:25:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Given shelf doesn't exist"
+						},
+						{
+							"name": "createCard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testDevice123_Card_1\",\r\n    \"shelfPosition\": 1,\r\n    \"slotPosition\": 2,\r\n    \"vendor\": \"Adtran\",\r\n    \"cardModel\": \"ADSL_CARD\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createCard?device=testDevice123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createCard"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "testDevice123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "283"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 10:24:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Card with given name already exist, existingCardDetails: Card{id:236, name:'testDevice123_Card_1', shelfPosition:1, slotPosition:1, vendor:'Adtran', cardModel:'ADSL_CARD', cardPartNumber:'1346789', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved'}"
+						}
+					]
+				},
+				{
+					"name": "updateCard",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"device123_Card_1\",\r\n    \"shelfPosition\": 1,\r\n    \"slotPosition\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"cardModel\": \"ADSL_CARD\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/updateCard?device=device123",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"updateCard"
+							],
+							"query": [
+								{
+									"key": "device",
+									"value": "device123"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createCard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123_Card_1\",\r\n    \"shelfPosition\": 1,\r\n    \"slotPosition\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"cardModel\": \"ADSL_CARD\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createCard?device=device123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createCard"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "device123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "222"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 08:23:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Card{id:221, name:'device123_Card_1', shelfPosition:1, slotPosition:1, vendor:'Adtran', cardModel:'ADSL_CARD', cardPartNumber:'1346789', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved'}"
+						},
+						{
+							"name": "createCard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123_Card_1\",\r\n    \"shelfPosition\": 1,\r\n    \"slotPosition\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"cardModel\": \"ADSL_CARD_1234\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createCard?device=device123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createCard"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "device123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "137"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 08:24:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Given card model: ADSL_CARD_1234 is not compatible with the device model, AllowedCardList on the device: [OLT_Card, ADSL_CARD, GPON_CARD]"
+						},
+						{
+							"name": "createCard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123_Card_1\",\r\n    \"shelfPosition\": 1,\r\n    \"slotPosition\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"cardModel\": \"ADSL_CARD_1234\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createCard?device=device123456",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createCard"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "device123456"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 08:25:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Device with the given name doesn't exist"
+						},
+						{
+							"name": "createCard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123_Card_1\",\r\n    \"shelfPosition\": 11,\r\n    \"slotPosition\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"cardModel\": \"ADSL_CARD\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createCard?device=device123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createCard"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "device123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "25"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 08:25:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Given shelf doesn't exist"
+						},
+						{
+							"name": "updateCard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"device123_Card_1\",\r\n    \"shelfPosition\": 1,\r\n    \"slotPosition\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"cardModel\": \"ADSL_CARD\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalStatus\": \"in Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateCard?device=device123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateCard"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "device123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "225"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 10:19:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Card{id:221, name:'device123_Card_1', shelfPosition:1, slotPosition:1, vendor:'Adtran', cardModel:'ADSL_CARD', cardPartNumber:'1346789', operationalStatus:'in Active', lifecycleStatus:'Active', reservationStatus:'unreserved'}"
+						},
+						{
+							"name": "updateCard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"vignesh_card_2\",\r\n    \"shelfPosition\": 1,\r\n    \"slotPosition\": 2,\r\n    \"vendor\": \"Adtran\",\r\n    \"cardModel\": \"ADSL_CARD\",\r\n    \"cardPartNumber\": \"1346789\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"unreserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateCard?device=vignesh",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateCard"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "vignesh"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "301"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 15:03:53 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "A card already exist on the given shelf, slot position. Existing card details: [Card{id:201, name:'vignesh_card_1', shelfPosition:1, slotPosition:2, vendor:'Adtran', cardModel:'ADSL_CARD', cardPartNumber:'1346789', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'unreserved'}]"
+						}
+					]
+				},
+				{
+					"name": "createPluggableOnCard",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Shubham-2-Dev-1_Card_1_1\",\r\n    \"positionOnCard\": 9,\r\n    \"vendor\": \"Nokia\",\r\n    \"pluggableModel\": \"SFP+\",\r\n    \"pluggablePartNumber\": \"SFP65498\",\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createPluggable?card=Shubham-2-Dev-1_Card_1",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"createPluggable"
+							],
+							"query": [
+								{
+									"key": "card",
+									"value": "Shubham-2-Dev-1_Card_1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createPluggable",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"pluggable_1\",\r\n    \"positionOnCard\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"pluggableModel\": \"SFP+\",\r\n    \"pluggablePartNumber\": \"SFP65498\",\r\n    \"operationalStatus\": \"active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"reserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createPluggable?card=device123_Card_1",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createPluggable"
+									],
+									"query": [
+										{
+											"key": "card",
+											"value": "device123_Card_1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "211"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 10:30:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Pluggable{id:239, name:'pluggable_1', positionOnCard:1, vendor:'Adtran', pluggableModel:'SFP+', pluggablePartNumber:'SFP65498', operationalStatus:'active', lifecycleStatus:'Active', reservationStatus:'reserved'}"
+						}
+					]
+				},
+				{
+					"name": "updatePluggableOnCard",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"pluggable_1\",\r\n    \"positionOnCard\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"pluggableModel\": \"SFP+\",\r\n    \"pluggablePartNumber\": \"SFP65498\",\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/updatePluggable?card=device123_Card_1",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"updatePluggable"
+							],
+							"query": [
+								{
+									"key": "card",
+									"value": "device123_Card_1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updatePluggable",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"pluggable_1\",\r\n    \"positionOnCard\": 1,\r\n    \"vendor\": \"Adtran\",\r\n    \"pluggableModel\": \"SFP+\",\r\n    \"pluggablePartNumber\": \"SFP*/*65498\",\r\n    \"operationalStatus\": \"active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"reserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updatePluggable?card=device123_Card_1",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updatePluggable"
+									],
+									"query": [
+										{
+											"key": "card",
+											"value": "device123_Card_1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "214"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Mar 2023 14:23:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Pluggable{id:239, name:'pluggable_1', positionOnCard:1, vendor:'Adtran', pluggableModel:'SFP+', pluggablePartNumber:'SFP*/*65498', operationalStatus:'active', lifecycleStatus:'Active', reservationStatus:'reserved'}"
+						}
+					]
+				},
+				{
+					"name": "createPortOnCard",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"VMIE-Device-1_Card_1_port1\",\r\n    \"positionOnCard\": 5,\r\n    \"portType\": \"rj45\",\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createPort?card=VMIE-Device-1_Card_1",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"createPort"
+							],
+							"query": [
+								{
+									"key": "card",
+									"value": "VMIE-Device-1_Card_1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createPort",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"port1\",\r\n    \"positionOnCard\": 5,\r\n    \"portType\": \"rj45\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createPort?card=device123_Card_1",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createPort"
+									],
+									"query": [
+										{
+											"key": "card",
+											"value": "device123_Card_1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "143"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 07:25:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Port{id=206, name='port1', positionOnCard=5, portType='rj45', operationalStatus='Active', lifecycleStatus='Active', reservationStatus='Active'}"
+						},
+						{
+							"name": "createPort",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"port1\",\r\n    \"positionOnCard\": 5,\r\n    \"portType\": \"rj45\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createPort?card=device123_Card_1",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createPort"
+									],
+									"query": [
+										{
+											"key": "card",
+											"value": "device123_Card_1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "200"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 07:26:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Port with given name already exist, existingPortDetails: Port{id=206, name='port1', positionOnCard=5, portType='rj45', operationalStatus='Active', lifecycleStatus='Active', reservationStatus='Active'}"
+						},
+						{
+							"name": "createPort",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"port1\",\r\n    \"positionOnCard\": 5,\r\n    \"portType\": \"rj45\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createPort?card=123",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createPort"
+									],
+									"query": [
+										{
+											"key": "card",
+											"value": "123"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 07:27:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Card with the given name doesn't exist"
+						}
+					]
+				},
+				{
+					"name": "updatePortOnCard",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"port1\",\r\n    \"positionOnCard\": 6,\r\n    \"portType\": \"rj45\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/updatePort?card=device123_Card_1",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"updatePort"
+							],
+							"query": [
+								{
+									"key": "card",
+									"value": "device123_Card_1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updatePort",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"port1\",\r\n    \"positionOnCard\": 7,\r\n    \"portType\": \"rj45\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updatePort?card=device123_Card_1",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updatePort"
+									],
+									"query": [
+										{
+											"key": "card",
+											"value": "device123_Card_1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "143"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 07:42:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Port{id:206, name:'port1', positionOnCard:7, portType:'rj45', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'Active'}"
+						}
+					]
+				},
+				{
+					"name": "createPortOnDevice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"VMIE-Dev-1_port2\",\r\n    \"positionOnCard\": 0,\r\n    \"positionOnDevice\": 2,\r\n    \"portType\": \"rj45\",\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createPortOnDevice?device=VMIE-Dev-1",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"createPortOnDevice"
+							],
+							"query": [
+								{
+									"key": "device",
+									"value": "VMIE-Dev-1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updatePort",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"port1\",\r\n    \"positionOnCard\": 7,\r\n    \"portType\": \"rj45\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updatePort?card=device123_Card_1",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updatePort"
+									],
+									"query": [
+										{
+											"key": "card",
+											"value": "device123_Card_1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "143"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 07:42:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Port{id:206, name:'port1', positionOnCard:7, portType:'rj45', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'Active'}"
+						},
+						{
+							"name": "createPortOnDevice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"vigneshPortOnDev1\",\r\n    \"positionOnCard\": 0,\r\n    \"positionOnDevice\": 1,\r\n    \"portType\": \"rj45\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createPortOnDevice?device=vignesh",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createPortOnDevice"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "vignesh"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "158"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 14:35:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Port{id:245, name:'vigneshPortOnDev1', positionOnCard:null, portType:'rj45', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'Active'}"
+						}
+					]
+				},
+				{
+					"name": "updatePortOnDevice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"vigneshPortOnDev1\",\r\n    \"positionOnCard\": 0,\r\n    \"positionOnDevice\": 12,\r\n    \"portType\": \"rj11\",\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/updatePortOnDevice?device=vignesh",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"updatePortOnDevice"
+							],
+							"query": [
+								{
+									"key": "device",
+									"value": "vignesh"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updatePort",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"port1\",\r\n    \"positionOnCard\": 7,\r\n    \"portType\": \"rj45\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updatePort?card=device123_Card_1",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updatePort"
+									],
+									"query": [
+										{
+											"key": "card",
+											"value": "device123_Card_1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "143"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 07:42:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Port{id:206, name:'port1', positionOnCard:7, portType:'rj45', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'Active'}"
+						},
+						{
+							"name": "updatePortOnDevice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"vigneshPortOnDev1\",\r\n    \"positionOnCard\": 0,\r\n    \"positionOnDevice\": 12,\r\n    \"portType\": \"rj11\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updatePortOnDevice?device=vignesh",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updatePortOnDevice"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "vignesh"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "158"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 14:37:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Port{id:245, name:'vigneshPortOnDev1', positionOnCard:null, portType:'rj11', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'Active'}"
+						}
+					]
+				},
+				{
+					"name": "createPluggableOnDevice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SDX-6320-16-Dev-1-port-2\",\r\n    \"positionOnCard\": 0,\r\n    \"positionOnDevice\": 2,\r\n    \"portType\": \"SFP+\",\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\",\r\n    \"vendor\": \"Adtran\",\r\n    \"pluggableModel\": \"SFP+\",\r\n    \"pluggablePartNumber\": \"avdcdc12as3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createPluggableOnDevice?device=SDX-6320-16-Dev-1",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"createPluggableOnDevice"
+							],
+							"query": [
+								{
+									"key": "device",
+									"value": "SDX-6320-16-Dev-1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updatePort",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"port1\",\r\n    \"positionOnCard\": 7,\r\n    \"portType\": \"rj45\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updatePort?card=device123_Card_1",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updatePort"
+									],
+									"query": [
+										{
+											"key": "card",
+											"value": "device123_Card_1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "143"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 07:42:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Port{id:206, name:'port1', positionOnCard:7, portType:'rj45', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'Active'}"
+						},
+						{
+							"name": "createPluggableOnDevice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"vigneshPortOnDev1\",\r\n    \"positionOnCard\": 0,\r\n    \"positionOnDevice\": 12,\r\n    \"portType\": \"rj11\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createPluggableOnDevice?device=vignesh",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createPluggableOnDevice"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "vignesh"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "212"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 14:38:14 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Pluggable{id:249, name:'vigneshPortOnDev1', positionOnCard:null, vendor:'null', pluggableModel:'null', pluggablePartNumber:'null', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'Active'}"
+						}
+					]
+				},
+				{
+					"name": "updatePluggableOnDevice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"VMIE-Device-1-Pluggable-8\",\r\n    \"positionOnDevice\": 8,\r\n    \"vendor\": \"Adtran\",\r\n    \"pluggableModel\": \"SFP+\",\r\n    \"pluggablePartNumber\": \"SFP65498\",\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/updatePluggableOnDevice?device=VMIE-Device-1",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"updatePluggableOnDevice"
+							],
+							"query": [
+								{
+									"key": "device",
+									"value": "VMIE-Device-1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updatePort",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"port1\",\r\n    \"positionOnCard\": 7,\r\n    \"portType\": \"rj45\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updatePort?card=device123_Card_1",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updatePort"
+									],
+									"query": [
+										{
+											"key": "card",
+											"value": "device123_Card_1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "143"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 07:42:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Port{id:206, name:'port1', positionOnCard:7, portType:'rj45', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'Active'}"
+						},
+						{
+							"name": "updatePluggableOnDevice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"vigneshPortOnDev1\",\r\n    \"positionOnCard\": 0,\r\n    \"positionOnDevice\": 9,\r\n    \"portType\": \"rj11\",\r\n    \"operationalStatus\": \"Active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"Active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updatePluggableOnDevice?device=vignesh",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updatePluggableOnDevice"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "vignesh"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "212"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 14:42:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Pluggable{id:249, name:'vigneshPortOnDev1', positionOnCard:null, vendor:'null', pluggableModel:'null', pluggablePartNumber:'null', operationalStatus:'Active', lifecycleStatus:'Active', reservationStatus:'Active'}"
+						},
+						{
+							"name": "updatePluggableOnDevice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"vigneshPortOnDev1\",\r\n    \"positionOnDevice\": 7,\r\n    \"vendor\": \"Adtran\",\r\n    \"pluggableModel\": \"SFP+\",\r\n    \"pluggablePartNumber\": \"SFP65498\",\r\n    \"operationalStatus\": \"active\",\r\n    \"lifecycleStatus\": \"Active\",\r\n    \"reservationStatus\": \"reserved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updatePluggableOnDevice?device=vignesh",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updatePluggableOnDevice"
+									],
+									"query": [
+										{
+											"key": "device",
+											"value": "vignesh"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "220"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 14:48:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Pluggable{id:249, name:'vigneshPortOnDev1', positionOnCard:null, vendor:'Adtran', pluggableModel:'SFP+', pluggablePartNumber:'SFP65498', operationalStatus:'active', lifecycleStatus:'Active', reservationStatus:'reserved'}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "LocationManager APIs",
+			"item": [
+				{
+					"name": "createCountry",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"India\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createCountry",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"createCountry"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createCountry",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"India\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createCountry",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createCountry"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "77"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 07:51:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Successfully created, com.prodapt.netinsight.locationManager.Country@4b82a38d"
+						}
+					]
+				},
+				{
+					"name": "createState",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"Karnataka\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createState?country=India",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"createState"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "India"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createState",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"Karnataka\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createState?country=India",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createState"
+									],
+									"query": [
+										{
+											"key": "country",
+											"value": "India"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 07:54:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Successfully created, com.prodapt.netinsight.locationManager.State@e330d74"
+						}
+					]
+				},
+				{
+					"name": "createCity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"Anna Nagar\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createCity?state=Tamil Nadu",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"createCity"
+							],
+							"query": [
+								{
+									"key": "state",
+									"value": "Tamil Nadu"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createCity",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"Anna Nagar\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createCity?state=Tamil Nadu",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createCity"
+									],
+									"query": [
+										{
+											"key": "state",
+											"value": "Tamil Nadu"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "53"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 09:44:02 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Successfully created, City{id:227, name:'Anna Nagar'}"
+						}
+					]
+				},
+				{
+					"name": "createBuilding",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"VelacheryBranch\",\r\n\"clliCode\":\"VELACH1234\",\r\n\"phoneNumber\":\"9876543210\",\r\n\"contactPerson\":\"Vignesh\",\r\n\"address\":\"5/3, Nattar St, Ram Nagar, Murugapakkam, Chennai, Tamil Nadu\",\r\n\"latitude\": \"12.975971\",\r\n\"longitude\":\"80.22120919999998\",\r\n\"drivingInstructions\":\"road, metro\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createBuilding?city=Velachery",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"createBuilding"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "Velachery"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createBuilding",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"testBuilding\",\r\n\"clliCode\":\"ANA654\",\r\n\"phoneNumber\":\"987654321\",\r\n\"contactPerson\":\"Vignesh\",\r\n\"address\":\"No 23, Abc Street, Annan Nagar, Chennai-600053\",\r\n\"latitude\": \"10.11``\",\r\n\"longitude\":\"11.12``\",\r\n\"drivingInstructions\":\"road, metro !@#$%^&*()`~\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createBuilding?city=Anna Nagar",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createBuilding"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "Anna Nagar"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "275"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 09:44:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Successfully created, Building{id:242, name:'testBuilding', clliCode:'ANA654', phoneNumber:'987654321', contactPerson:'Vignesh', address:'No 23, Abc Street, Annan Nagar, Chennai-600053', latitude:'10.11``', longitude:'11.12``', drivingInstructions:'road, metro !@#$%^&*()`~'}"
+						}
+					]
+				},
+				{
+					"name": "updateBuilding",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"testBuilding\",\r\n\"clliCode\":\"ANA6894\",\r\n\"phoneNumber\":\"123456789\",\r\n\"contactPerson\":\"VigneshTestUpdate\",\r\n\"address\":\"No 23, Abc Street, Annan Nagar, Chennai-600053\",\r\n\"latitude\": \"10.11``\",\r\n\"longitude\":\"11.12``\",\r\n\"drivingInstructions\":\"road, metro !@#$%^&*()`~\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/updateBuilding?city=Anna Nagar",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"updateBuilding"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "Anna Nagar"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateBuilding",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"testBuilding\",\r\n\"clliCode\":\"ANA6894\",\r\n\"phoneNumber\":\"123456789\",\r\n\"contactPerson\":\"VigneshTestUpdate\",\r\n\"address\":\"No 23, Abc Street, Annan Nagar, Chennai-600053\",\r\n\"latitude\": \"10.11``\",\r\n\"longitude\":\"11.12``\",\r\n\"drivingInstructions\":\"road, metro !@#$%^&*()`~\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/updateBuilding?city=Anna Nagar",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"updateBuilding"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "Anna Nagar"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "286"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 09:44:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Successfully created, Building{id:242, name:'testBuilding', clliCode:'ANA6894', phoneNumber:'123456789', contactPerson:'VigneshTestUpdate', address:'No 23, Abc Street, Annan Nagar, Chennai-600053', latitude:'10.11``', longitude:'11.12``', drivingInstructions:'road, metro !@#$%^&*()`~'}"
+						}
+					]
+				},
+				{
+					"name": "createRack",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"AdtranRack\",\r\n    \"location\": \"Guindy\",\r\n    \"height\": 23.5,\r\n    \"width\": 19,\r\n    \"depth\": 15,\r\n    \"numOfPositionsContained\": 14,\r\n    \"numOfPositionsOccupied\": 0,\r\n    \"reservedPositions\": [],\r\n    \"freePositions\": [\r\n        1,\r\n        2,\r\n        3,\r\n        4,\r\n        5,\r\n        6,\r\n        7,\r\n        8,\r\n        9,\r\n        10,\r\n        11,\r\n        12,\r\n        13,\r\n        14\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createRack?building=ProdaptHQ",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"createRack"
+							],
+							"query": [
+								{
+									"key": "building",
+									"value": "ProdaptHQ"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testRack\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"height\": 23.5,\r\n    \"width\": 19,\r\n    \"depth\": 15,\r\n    \"numOfPositionsContained\": 14,\r\n    \"numOfPositionsOccupied\": 0,\r\n    \"reservedPositions\": [],\r\n    \"freePositions\": [\r\n        1,\r\n        2,\r\n        3,\r\n        4,\r\n        5,\r\n        6,\r\n        7,\r\n        8,\r\n        9,\r\n        10,\r\n        11,\r\n        12,\r\n        13,\r\n        14\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createRack?building=testBuilding",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createRack"
+									],
+									"query": [
+										{
+											"key": "building",
+											"value": "testBuilding"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "251"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:20:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Successfully created, Rack{id:185, name:'testRack', location:'Anna Nagar', height:23.5, width:19.0, depth:15.0, numOfPositionsContained:14, numOfPositionsOccupied:0, reservedPositions:[], freePositions:[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]}"
+						}
+					]
+				},
+				{
+					"name": "updateRack",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"testRack\",\r\n    \"location\": \"Anna Nagar, 2nd street\",\r\n    \"height\": 23.5,\r\n    \"width\": 19,\r\n    \"depth\": 19,\r\n    \"numOfPositionsContained\": 14,\r\n    \"numOfPositionsOccupied\": 3,\r\n    \"reservedPositions\": [1,2,3],\r\n    \"freePositions\": [\r\n        1,\r\n        2,\r\n        3,\r\n        4,\r\n        5,\r\n        6,\r\n        7,\r\n        8,\r\n        9,\r\n        10,\r\n        11,\r\n        12,\r\n        13,\r\n        14\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/updateRack?building=testBuilding",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"updateRack"
+							],
+							"query": [
+								{
+									"key": "building",
+									"value": "testBuilding"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createRack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"testRack\",\r\n    \"location\": \"Anna Nagar\",\r\n    \"height\": 23.5,\r\n    \"width\": 19,\r\n    \"depth\": 15,\r\n    \"numOfPositionsContained\": 14,\r\n    \"numOfPositionsOccupied\": 0,\r\n    \"reservedPositions\": [],\r\n    \"freePositions\": [\r\n        1,\r\n        2,\r\n        3,\r\n        4,\r\n        5,\r\n        6,\r\n        7,\r\n        8,\r\n        9,\r\n        10,\r\n        11,\r\n        12,\r\n        13,\r\n        14\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createRack?building=testBuilding",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createRack"
+									],
+									"query": [
+										{
+											"key": "building",
+											"value": "testBuilding"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "251"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 10:20:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Successfully created, Rack{id:185, name:'testRack', location:'Anna Nagar', height:23.5, width:19.0, depth:15.0, numOfPositionsContained:14, numOfPositionsOccupied:0, reservedPositions:[], freePositions:[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]}"
+						}
+					]
+				},
+				{
+					"name": "getCountry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getCountry?name=Netherland",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"getCountry"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Netherland"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getCountry",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getCountry?name=India",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getCountry"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "India"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 09:47:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 202,\n    \"name\": \"India\",\n    \"states\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllCountry",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{user}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getAllCountry",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"getAllCountry"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getCountry",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getCountry?name=India",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getCountry"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "India"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 09:47:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 202,\n    \"name\": \"India\",\n    \"states\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "getState",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getState?name=Tamil Nadu",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getState"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Tamil Nadu"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getState",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getState?name=Tamil Nadu",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getState"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Tamil Nadu"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 09:48:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 203,\n    \"name\": \"Tamil Nadu\",\n    \"country\": null,\n    \"cities\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "getCity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getCity?name=Banglore",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getCity"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Banglore"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getCity",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getCity?name=Banglore",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getCity"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Banglore"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 09:48:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 207,\n    \"name\": \"Banglore\",\n    \"buildings\": [],\n    \"state\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getBuilding",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getBuilding?name=testBuilding",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getBuilding"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "testBuilding"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getBuilding",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getBuilding?name=testBuilding",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getBuilding"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "testBuilding"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Mar 2023 09:49:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 242,\n    \"name\": \"testBuilding\",\n    \"clliCode\": \"ANA6894\",\n    \"phoneNumber\": \"123456789\",\n    \"contactPerson\": \"VigneshTestUpdate\",\n    \"address\": \"No 23, Abc Street, Annan Nagar, Chennai-600053\",\n    \"latitude\": \"10.11``\",\n    \"longitude\": \"11.12``\",\n    \"drivingInstructions\": \"road, metro !@#$%^&*()`~\",\n    \"racks\": [],\n    \"city\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllCitiesInState",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getAllCity?state=Tamil Nadu",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getAllCity"
+							],
+							"query": [
+								{
+									"key": "state",
+									"value": "Tamil Nadu"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllCitiesInState",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getAllCity?state=Tamil Nadu",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getAllCity"
+									],
+									"query": [
+										{
+											"key": "state",
+											"value": "Tamil Nadu"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 10 Apr 2023 13:54:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 255,\n        \"name\": \"Cuddalore\",\n        \"buildings\": []\n    },\n    {\n        \"id\": 227,\n        \"name\": \"Anna Nagar\",\n        \"buildings\": []\n    },\n    {\n        \"id\": 212,\n        \"name\": \"Chennai\",\n        \"buildings\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getAllStateInCountry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getAllState?country=India",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getAllState"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "India"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllStateInCountry",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getAllState?country=India",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getAllState"
+									],
+									"query": [
+										{
+											"key": "country",
+											"value": "India"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 10 Apr 2023 13:55:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 205,\n        \"name\": \"Karnataka\",\n        \"cities\": []\n    },\n    {\n        \"id\": 203,\n        \"name\": \"Tamil Nadu\",\n        \"cities\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getAllBuildingsInCity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getAllBuilding?city=Cuddalore",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getAllBuilding"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "Cuddalore"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllBuildingsInCity",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getAllBuilding?city=Cuddalore",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getAllBuilding"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "Cuddalore"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 10 Apr 2023 13:57:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 256,\n        \"name\": \"VishvaVeedu\",\n        \"clliCode\": \"Vishwa\",\n        \"phoneNumber\": \"890458692\",\n        \"contactPerson\": \"Vishva\",\n        \"address\": \"No 23, Abc Street, Annan Nagar, Chennai-600053\",\n        \"latitude\": \"10.11``\",\n        \"longitude\": \"11.12``\",\n        \"drivingInstructions\": \"No10 jsbdj st jdnfjskbdjkfbakj\",\n        \"racks\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getAllRacksInBuilding",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/getAllRack?building=VishvaVeedu",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"getAllRack"
+							],
+							"query": [
+								{
+									"key": "building",
+									"value": "VishvaVeedu"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllRacksInBuilding",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{ip}}:8090/getAllRack?building=VishvaVeedu",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"getAllRack"
+									],
+									"query": [
+										{
+											"key": "building",
+											"value": "VishvaVeedu"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 10 Apr 2023 13:58:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 257,\n        \"name\": \"VishvaRack\",\n        \"location\": \"Cuddalore\",\n        \"height\": 23.5,\n        \"width\": 19,\n        \"depth\": 15,\n        \"numOfPositionsContained\": 14,\n        \"numOfPositionsOccupied\": 0,\n        \"reservedPositions\": [],\n        \"freePositions\": [\n            1,\n            2,\n            3,\n            4,\n            5,\n            6,\n            7,\n            8,\n            9,\n            10,\n            11,\n            12,\n            13,\n            14\n        ],\n        \"devices\": []\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ConnectionManager APIs",
+			"item": [
+				{
+					"name": "Create Physical Conn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"splitter-ont\",\r\n    \"deviceA\": \"Vignesh-ont\",\r\n    \"deviceZ\": \"1x8_splitter\",\r\n    \"deviceAPort\": \"1\",\r\n    \"deviceZPort\": \"2\",\r\n    \"connectionType\": \"Cable Fiber\",\r\n    \"bandwidth\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/createPhysicalConnection",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"createPhysicalConnection"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Physical Conn",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"PhysicalConnection1\",\r\n    \"deviceA\": \"vignesh\",\r\n    \"deviceZ\": \"testDevice123\",\r\n    \"deviceAPort\": \"1/2/7\",\r\n    \"deviceZPort\": \"1/2/113\",\r\n    \"connectionType\": \"Ethernet\",\r\n    \"bandwidth\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createPhysicalConnection",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createPhysicalConnection"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "62"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Apr 2023 07:33:02 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "No pluggable exist on the given Z-End shelf/slot/port position"
+						},
+						{
+							"name": "Create Physical Conn",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"PhysicalConnection1\",\r\n    \"deviceA\": \"vignesh\",\r\n    \"deviceZ\": \"testDevice123\",\r\n    \"deviceAPort\": \"1/2/7\",\r\n    \"deviceZPort\": \"1/2/13\",\r\n    \"connectionType\": \"Cable Fiber\",\r\n    \"bandwidth\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createPhysicalConnection",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createPhysicalConnection"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "198"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Apr 2023 08:15:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "PhysicalConnection{id:251, name:'PhysicalConnection1', aEndDevice:'vignesh', zEndDevice:'testDevice123', aEndDevicePort:'1/2/7', zEndDevicePort:'1/2/13', connectionType:'Cable Fiber', bandwidth:100}"
+						},
+						{
+							"name": "Create Physical Conn",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"btwPlugDev\",\r\n    \"deviceA\": \"vignesh\",\r\n    \"deviceZ\": \"device123\",\r\n    \"deviceAPort\": \"7\",\r\n    \"deviceZPort\": \"10\",\r\n    \"connectionType\": \"RJ45\",\r\n    \"bandwidth\": 1000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://{{ip}}:8090/createPhysicalConnection",
+									"protocol": "https",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8090",
+									"path": [
+										"createPhysicalConnection"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Apr 2023 09:56:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "A Physical connection with given name already exist"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "TMF APIs",
+			"item": [
+				{
+					"name": "get Device",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/tmf-api/resourceInventoryManagement/v4/resource/device?name=Shubham-2-Dev-1",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"tmf-api",
+								"resourceInventoryManagement",
+								"v4",
+								"resource",
+								"device"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Shubham-2-Dev-1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create Device",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"VMIE-Test-Device-1\",\r\n    \"managementIp\": \"10.10.10.15\",\r\n    \"rackPosition\": \"1\",\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\",\r\n    \"deviceModel\": \"7360 ISAM FX-4 OLT\",\r\n    \"shelves\": [\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1_Shelf_2\",\r\n            \"shelfPosition\": 2,\r\n            \"operationalState\": \"unassigned\",\r\n            \"administrativeState\": \"unassigned\",\r\n            \"href\": \"https://server:8090/getShelfById?id=398\",\r\n            \"usageState\": \"unassigned\",\r\n            \"slots\": [\r\n                {\r\n                    \"name\": \"VMIE-Test-Device-1/2/1\",\r\n                    \"slotPosition\": 1,\r\n                    \"operationalState\": \"Active\",\r\n                    \"administrativeState\": \"Active\",\r\n                    \"usageState\": \"unreserved\",\r\n                    \"href\": \"https://server:8090/getSlotById?id=404\",\r\n                    \"cards\": [\r\n                        {\r\n                            \"name\": \"VMIE-Test-Device-1_Card_2\",\r\n                            \"shelfPosition\": 2,\r\n                            \"slotPosition\": 1,\r\n                            \"vendor\": \"Nokia\",\r\n                            \"cardModel\": \"GPON_CARD\",\r\n                            \"cardPartNumber\": \"1346789\",\r\n                            \"operationalState\": \"Active\",\r\n                            \"administrativeState\": \"Active\",\r\n                            \"usageState\": \"unreserved\",\r\n                            \"href\": \"https://server:8090/getCardById?id=405\",\r\n                            \"cardSlots\": [\r\n                                {\r\n                                    \"name\": \"VMIE-Test-Device-1_Card_2/4\",\r\n                                    \"slotPosition\": 4,\r\n                                    \"operationalState\": \"Active\",\r\n                                    \"administrativeState\": \"Active\",\r\n                                    \"usageState\": \"unreserved\",\r\n                                    \"href\": \"https://server:8090/getCardSlotById?id=414\",\r\n                                    \"pluggables\": null,\r\n                                    \"ports\": {\r\n                                        \"name\": \"VMIE-Test-Device-2_Card_1_port1\",\r\n                                        \"positionOnCard\": 4,\r\n                                        \"positionOnDevice\": null,\r\n                                        \"portType\": \"rj45\",\r\n                                        \"operationalState\": \"Active\",\r\n                                        \"administrativeState\": \"Active\",\r\n                                        \"usageState\": \"unreserved\",\r\n                                        \"href\": \"https://server:8090/getPortById?id=415\"\r\n                                    }\r\n                                },\r\n                                {\r\n                                    \"name\": \"VMIE-Test-Device-1_Card_2/1\",\r\n                                    \"slotPosition\": 1,\r\n                                    \"operationalState\": \"Active\",\r\n                                    \"administrativeState\": \"Active\",\r\n                                    \"usageState\": \"unreserved\",\r\n                                    \"href\": \"https://server:8090/getCardSlotById?id=406\",\r\n                                    \"pluggables\": {\r\n                                        \"name\": \"VMIE-Test-Device-1_Card_2_pluggable_1\",\r\n                                        \"positionOnCard\": 1,\r\n                                        \"positionOnDevice\": null,\r\n                                        \"vendor\": \"Adtran\",\r\n                                        \"pluggableModel\": \"SFP+\",\r\n                                        \"pluggablePartNumber\": \"SFP65498\",\r\n                                        \"operationalState\": \"Active\",\r\n                                        \"administrativeState\": \"Active\",\r\n                                        \"usageState\": \"unreserved\",\r\n                                        \"href\": \"https://server:8090/getPluggableById?id=407\"\r\n                                    },\r\n                                    \"ports\": null\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1_Shelf_7\",\r\n            \"shelfPosition\": 7,\r\n            \"operationalState\": \"unassigned\",\r\n            \"administrativeState\": \"unassigned\",\r\n            \"href\": \"https://server:8090/getShelfById?id=403\",\r\n            \"usageState\": \"unassigned\",\r\n            \"slots\": []\r\n        },\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1_Shelf_4\",\r\n            \"shelfPosition\": 4,\r\n            \"operationalState\": \"unassigned\",\r\n            \"administrativeState\": \"unassigned\",\r\n            \"href\": \"https://server:8090/getShelfById?id=400\",\r\n            \"usageState\": \"unassigned\",\r\n            \"slots\": []\r\n        },\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1_Shelf_5\",\r\n            \"shelfPosition\": 5,\r\n            \"operationalState\": \"unassigned\",\r\n            \"administrativeState\": \"unassigned\",\r\n            \"href\": \"https://server:8090/getShelfById?id=401\",\r\n            \"usageState\": \"unassigned\",\r\n            \"slots\": []\r\n        },\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1_Shelf_6\",\r\n            \"shelfPosition\": 6,\r\n            \"operationalState\": \"unassigned\",\r\n            \"administrativeState\": \"unassigned\",\r\n            \"href\": \"https://server:8090/getShelfById?id=402\",\r\n            \"usageState\": \"unassigned\",\r\n            \"slots\": []\r\n        },\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1_Shelf_1\",\r\n            \"shelfPosition\": 1,\r\n            \"operationalState\": \"unassigned\",\r\n            \"administrativeState\": \"unassigned\",\r\n            \"href\": \"https://server:8090/getShelfById?id=397\",\r\n            \"usageState\": \"unassigned\",\r\n            \"slots\": [\r\n                {\r\n                    \"name\": \"VMIE-Test-Device-1/1/1\",\r\n                    \"slotPosition\": 1,\r\n                    \"operationalState\": \"Active\",\r\n                    \"administrativeState\": \"Active\",\r\n                    \"usageState\": \"unreserved\",\r\n                    \"href\": \"https://server:8090/getSlotById?id=408\",\r\n                    \"cards\": [\r\n                        {\r\n                            \"name\": \"VMIE-Test-Device-1_Card_1\",\r\n                            \"shelfPosition\": 1,\r\n                            \"slotPosition\": 1,\r\n                            \"vendor\": \"Nokia\",\r\n                            \"cardModel\": \"GPON_CARD\",\r\n                            \"cardPartNumber\": \"1346789\",\r\n                            \"operationalState\": \"Active\",\r\n                            \"administrativeState\": \"Active\",\r\n                            \"usageState\": \"unreserved\",\r\n                            \"href\": \"https://server:8090/getCardById?id=409\",\r\n                            \"cardSlots\": [\r\n                                {\r\n                                    \"name\": \"VMIE-Test-Device-1_Card_1/5\",\r\n                                    \"slotPosition\": 5,\r\n                                    \"operationalState\": \"Active\",\r\n                                    \"administrativeState\": \"Active\",\r\n                                    \"usageState\": \"unreserved\",\r\n                                    \"href\": \"https://server:8090/getCardSlotById?id=412\",\r\n                                    \"pluggables\": null,\r\n                                    \"ports\": {\r\n                                        \"name\": \"VMIE-Test-Device-1_Card_1_port1\",\r\n                                        \"positionOnCard\": 5,\r\n                                        \"positionOnDevice\": null,\r\n                                        \"portType\": \"rj45\",\r\n                                        \"operationalState\": \"Active\",\r\n                                        \"administrativeState\": \"Active\",\r\n                                        \"usageState\": \"unreserved\",\r\n                                        \"href\": \"https://server:8090/getPortById?id=413\"\r\n                                    }\r\n                                },\r\n                                {\r\n                                    \"name\": \"VMIE-Test-Device-1_Card_1/1\",\r\n                                    \"slotPosition\": 1,\r\n                                    \"operationalState\": \"Active\",\r\n                                    \"administrativeState\": \"Active\",\r\n                                    \"usageState\": \"unreserved\",\r\n                                    \"href\": \"https://server:8090/getCardSlotById?id=410\",\r\n                                    \"pluggables\": {\r\n                                        \"name\": \"VMIE-Test-Device-1_Card_1_pluggable_1\",\r\n                                        \"positionOnCard\": 1,\r\n                                        \"positionOnDevice\": null,\r\n                                        \"vendor\": \"Adtran\",\r\n                                        \"pluggableModel\": \"SFP+\",\r\n                                        \"pluggablePartNumber\": \"SFP65498\",\r\n                                        \"operationalState\": \"Active\",\r\n                                        \"administrativeState\": \"Active\",\r\n                                        \"usageState\": \"unreserved\",\r\n                                        \"href\": \"https://server:8090/getPluggableById?id=411\"\r\n                                    },\r\n                                    \"ports\": null\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1_Shelf_3\",\r\n            \"shelfPosition\": 3,\r\n            \"operationalState\": \"unassigned\",\r\n            \"administrativeState\": \"unassigned\",\r\n            \"href\": \"https://server:8090/getShelfById?id=399\",\r\n            \"usageState\": \"unassigned\",\r\n            \"slots\": []\r\n        }\r\n    ],\r\n    \"devicePorts\": [\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1_Card_1_port4\",\r\n            \"positionOnCard\": null,\r\n            \"positionOnDevice\": 1,\r\n            \"portType\": \"rj45\",\r\n            \"operationalState\": \"Active\",\r\n            \"administrativeState\": \"Active\",\r\n            \"usageState\": \"unreserved\",\r\n            \"href\": \"https://server:Port{id:417, name:'VMIE-Test-Device-1_Card_1_port4', positionOnCard:null, portType:'rj45', operationalState:'Active', administrativeState:'Active', usageState:'unreserved'}/getPortById?id=417\"\r\n        },\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1_Card_1_port2\",\r\n            \"positionOnCard\": null,\r\n            \"positionOnDevice\": 2,\r\n            \"portType\": \"rj45\",\r\n            \"operationalState\": \"Active\",\r\n            \"administrativeState\": \"Active\",\r\n            \"usageState\": \"unreserved\",\r\n            \"href\": \"https://server:Port{id:416, name:'VMIE-Test-Device-1_Card_1_port2', positionOnCard:null, portType:'rj45', operationalState:'Active', administrativeState:'Active', usageState:'unreserved'}/getPortById?id=416\"\r\n        }\r\n    ],\r\n    \"devicePluggables\": [\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1-Pluggable-8\",\r\n            \"positionOnCard\": null,\r\n            \"positionOnDevice\": 8,\r\n            \"vendor\": \"Adtran\",\r\n            \"pluggableModel\": \"SFP+\",\r\n            \"pluggablePartNumber\": \"SFP65498\",\r\n            \"operationalState\": \"Active\",\r\n            \"administrativeState\": \"Active\",\r\n            \"usageState\": \"unreserved\",\r\n            \"href\": \"https://server:8090/getPluggableById?id=419\"\r\n        },\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1-Pluggable-1\",\r\n            \"positionOnCard\": null,\r\n            \"positionOnDevice\": 7,\r\n            \"vendor\": null,\r\n            \"pluggableModel\": null,\r\n            \"pluggablePartNumber\": null,\r\n            \"operationalState\": \"Active\",\r\n            \"administrativeState\": \"Active\",\r\n            \"usageState\": \"unreserved\",\r\n            \"href\": \"https://server:8090/getPluggableById?id=418\"\r\n        }\r\n    ],\r\n    \"resourceSpecification\": {\r\n        \"id\": 375,\r\n        \"deviceModelName\": \"7360 ISAM FX-4 OLT\",\r\n        \"href\": \"https://server:8090/getModelById?id=375\"\r\n    },\r\n    \"relatedParty\": {\r\n        \"building\": {\r\n            \"id\": 352,\r\n            \"name\": \"demoBuilding\",\r\n            \"clliCode\": \"ANA654\",\r\n            \"phoneNumber\": \"9876543210\",\r\n            \"contactPerson\": \"Vignesh654\",\r\n            \"address\": \"No 23, Abc Street, Annan Nagar, Chennai-600053\",\r\n            \"latitude\": \"10.11``\",\r\n            \"longitude\": \"11.12``\",\r\n            \"drivingInstructions\": \"road, metro !@#$%^&*()`~\",\r\n            \"href\": \"https://server:8090/getBuildingById?id=352\"\r\n        },\r\n        \"rack\": {\r\n            \"id\": 353,\r\n            \"name\": \"demoRack\",\r\n            \"location\": \"Anna Nagar\",\r\n            \"height\": 23.5,\r\n            \"width\": 19.0,\r\n            \"depth\": 15.0,\r\n            \"numOfPositionsContained\": 14,\r\n            \"numOfPositionsOccupied\": 0,\r\n            \"reservedPositions\": [],\r\n            \"freePositions\": [\r\n                1,\r\n                2,\r\n                3,\r\n                4,\r\n                5,\r\n                6,\r\n                7,\r\n                8,\r\n                9,\r\n                10,\r\n                11,\r\n                12,\r\n                13,\r\n                14\r\n            ],\r\n            \"href\": \"https://server:8090/getRackById?id=353\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/tmf-api/resourceInventoryManagement/v4/resource/createdevice",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"tmf-api",
+								"resourceInventoryManagement",
+								"v4",
+								"resource",
+								"createdevice"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "VMIE-Device-1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Device",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"VMIE-Test-Device-1\",\r\n    \"managementIp\": \"10.10.10.15\",\r\n    \"rackPosition\": \"1\",\r\n    \"operationalState\": \"Active\",\r\n    \"administrativeState\": \"Active\",\r\n    \"usageState\": \"unreserved\",\r\n    \"serialNumber\": \"987654321\",\r\n    \"deviceModel\": \"7360 ISAM FX-4 OLT\",\r\n    \"shelves\": [],\r\n    \"devicePorts\": [\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1_Card_1_port4\",\r\n            \"positionOnCard\": null,\r\n            \"positionOnDevice\": 1,\r\n            \"portType\": \"rj11\",\r\n            \"operationalState\": \"Active\",\r\n            \"administrativeState\": \"Active\",\r\n            \"usageState\": \"unreserved\",\r\n            \"href\": \"https://server:Port{id:417, name:'VMIE-Test-Device-1_Card_1_port4', positionOnCard:null, portType:'rj45', operationalState:'Active', administrativeState:'Active', usageState:'unreserved'}/getPortById?id=417\"\r\n        },\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1_Card_1_port5\",\r\n            \"positionOnCard\": null,\r\n            \"positionOnDevice\": 5,\r\n            \"portType\": \"rj11\",\r\n            \"operationalState\": \"Active\",\r\n            \"administrativeState\": \"Active\",\r\n            \"usageState\": \"unreserved\",\r\n            \"href\": \"https://server:Port{id:416, name:'VMIE-Test-Device-1_Card_1_port2', positionOnCard:null, portType:'rj45', operationalState:'Active', administrativeState:'Active', usageState:'unreserved'}/getPortById?id=416\"\r\n        }\r\n    ],\r\n    \"devicePluggables\": [\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1-Pluggable-9\",\r\n            \"positionOnCard\": null,\r\n            \"positionOnDevice\": 9,\r\n            \"vendor\": \"Adtran\",\r\n            \"pluggableModel\": \"SFP\",\r\n            \"pluggablePartNumber\": \"SFP65498\",\r\n            \"operationalState\": \"Active\",\r\n            \"administrativeState\": \"Active\",\r\n            \"usageState\": \"unreserved\",\r\n            \"href\": \"https://server:8090/getPluggableById?id=419\"\r\n        },\r\n        {\r\n            \"name\": \"VMIE-Test-Device-1-Pluggable-1\",\r\n            \"positionOnCard\": null,\r\n            \"positionOnDevice\": 7,\r\n            \"vendor\": null,\r\n            \"pluggableModel\": null,\r\n            \"pluggablePartNumber\": null,\r\n            \"operationalState\": \"Active\",\r\n            \"administrativeState\": \"Active\",\r\n            \"usageState\": \"unreserved\",\r\n            \"href\": \"https://server:8090/getPluggableById?id=418\"\r\n        }\r\n    ],\r\n    \"resourceSpecification\": {\r\n        \"id\": 375,\r\n        \"deviceModelName\": \"7360 ISAM FX-4 OLT\",\r\n        \"href\": \"https://server:8090/getModelById?id=375\"\r\n    },\r\n    \"relatedParty\": {\r\n        \"building\": {\r\n            \"id\": 352,\r\n            \"name\": \"demoBuilding\",\r\n            \"clliCode\": \"ANA654\",\r\n            \"phoneNumber\": \"9876543210\",\r\n            \"contactPerson\": \"Vignesh654\",\r\n            \"address\": \"No 23, Abc Street, Annan Nagar, Chennai-600053\",\r\n            \"latitude\": \"10.11``\",\r\n            \"longitude\": \"11.12``\",\r\n            \"drivingInstructions\": \"road, metro !@#$%^&*()`~\",\r\n            \"href\": \"https://server:8090/getBuildingById?id=352\"\r\n        },\r\n        \"rack\": {\r\n            \"id\": 353,\r\n            \"name\": \"demoRack\",\r\n            \"location\": \"Anna Nagar\",\r\n            \"height\": 23.5,\r\n            \"width\": 19.0,\r\n            \"depth\": 15.0,\r\n            \"numOfPositionsContained\": 14,\r\n            \"numOfPositionsOccupied\": 0,\r\n            \"reservedPositions\": [],\r\n            \"freePositions\": [\r\n                1,\r\n                2,\r\n                3,\r\n                4,\r\n                5,\r\n                6,\r\n                7,\r\n                8,\r\n                9,\r\n                10,\r\n                11,\r\n                12,\r\n                13,\r\n                14\r\n            ],\r\n            \"href\": \"https://server:8090/getRackById?id=353\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/tmf-api/resourceInventoryManagement/v4/resource/updatedevice?name=VMIE-Test-Device-1",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"tmf-api",
+								"resourceInventoryManagement",
+								"v4",
+								"resource",
+								"updatedevice"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "VMIE-Device-1",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "VMIE-Test-Device-1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "add user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emailid\": \"admin@prodapt.com\",\r\n    \"name\": \"admin\",\r\n    \"password\": \"admin\",\r\n    \"role\": \"ADMIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/add",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emailid\": \"admin@prodapt.com\",\r\n    \"name\": \"admin\",\r\n    \"password\": \"admin\",\r\n    \"role\": \"ADMIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{ip}}:8090/add",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all users",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{user}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ip}}:8090/alldata",
+							"protocol": "https",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "8090",
+							"path": [
+								"alldata"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "ip",
+			"value": "{{ip}}"
+		}
+	]
+}

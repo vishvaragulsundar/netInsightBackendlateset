@@ -1,0 +1,220 @@
+{
+  "name": "name-context",
+  "@type": "device",
+  "isBundle": false,
+  "place": [
+    {
+      "name": "customer-building-velachery",
+      "clliCode": "prohq01",
+      "phoneNumber": "9876543210",
+      "contactPerson": "Vignesh",
+      "address": "Guindy, chennai",
+      "latitude": "12.840711",
+      "longitude": "77.676369",
+      "drivingInstructions": "road, metro",
+      "href": "https://127.0.1.1:8080/getBuildingById?id=13",
+      "notes": "HQ in chennai",
+      "additionalAttributes": []
+    }
+  ],
+  "resourceCharacteristics": [
+    {
+      "name": "serialNumber",
+      "value": "abf9875aa"
+    },
+    {
+      "name": "managementIp",
+      "value": "192.168.122.6"
+    },
+    {
+      "name": "rackPosition",
+      "value": "5"
+    },
+    {
+      "name": "deviceModel",
+      "value": "isam 7360 fx-4"
+    }
+  ],
+  "operationalState": "enable",
+  "administrativeState": "unlocked",
+  "usageState": "active",
+  "shelves": [
+    {
+      "name": "name-context_shelf_1",
+      "shelfPosition": 1,
+      "operationalState": "unassigned",
+      "administrativeState": "unassigned",
+      "href": "https://127.0.1.1:8080/getShelfById?id=19",
+      "usageState": "unassigned",
+      "slots": [
+        {
+          "name": "name-context1/1/1",
+          "slotPosition": 1,
+          "operationalState": "enable",
+          "administrativeState": "unlocked",
+          "usageState": "active",
+          "href": "https://127.0.1.1:8080/getSlotById?id=28",
+          "cards": [
+            {
+              "name": "name-context_card_1",
+              "shelfPosition": 1,
+              "slotPosition": 1,
+              "vendor": "Nokia",
+              "cardModel": "Nokia ISAM FWLT-C",
+              "cardPartNumber": "1346789",
+              "operationalState": "enable",
+              "administrativeState": "unlocked",
+              "usageState": "active",
+              "href": "https://127.0.1.1:8080/getCardById?id=29",
+              "cardSlots": [
+                {
+                  "name": "name-context_card_1/1",
+                  "slotPosition": 1,
+                  "operationalState": "Active",
+                  "administrativeState": "Active",
+                  "usageState": "unreserved",
+                  "href": "https://127.0.1.1:8080/getCardSlotById?id=30",
+                  "pluggables": {
+                    "name": "name-context_card_1_1",
+                    "positionOnCard": 1,
+                    "positionOnDevice": null,
+                    "vendor": "Nokia",
+                    "pluggableModel": "SFP+",
+                    "pluggablePartNumber": "SFP65498",
+                    "operationalState": "Active",
+                    "administrativeState": "Active",
+                    "usageState": "unreserved",
+                    "href": "https://127.0.1.1:8080/getPluggableById?id=31",
+                    "logicalPorts": [],
+                    "additionalAttributes": []
+                  },
+                  "ports": null
+                }
+              ],
+              "additionalAttributes": []
+            }
+          ]
+        }
+      ],
+      "additionalAttributes": []
+    },
+    {
+      "name": "name-context_shelf_2",
+      "shelfPosition": 2,
+      "operationalState": "unassigned",
+      "administrativeState": "unassigned",
+      "href": "https://127.0.1.1:8080/getShelfById?id=20",
+      "usageState": "unassigned",
+      "slots": [
+        {
+          "name": "name-context/2/1",
+          "slotPosition": 1,
+          "operationalState": "enable",
+          "administrativeState": "unlocked",
+          "usageState": "active",
+          "href": "https://127.0.1.1:8080/getSlotById?id=26",
+          "cards": [
+            {
+              "name": "name-context_card_2",
+              "shelfPosition": 2,
+              "slotPosition": 1,
+              "vendor": "Nokia",
+              "cardModel": "Nokia ISAM FGLT-B",
+              "cardPartNumber": "1346789",
+              "operationalState": "enable",
+              "administrativeState": "unlocked",
+              "usageState": "active",
+              "href": "https://127.0.1.1:8080/getCardById?id=27",
+              "cardSlots": [
+                {
+                  "name": "name-context_card_2/1",
+                  "slotPosition": 1,
+                  "operationalState": "Active",
+                  "administrativeState": "Active",
+                  "usageState": "unreserved",
+                  "href": "https://127.0.1.1:8080/getCardSlotById?id=32",
+                  "pluggables": null,
+                  "ports": {
+                    "name": "name-context_card_1_port1",
+                    "positionOnCard": 1,
+                    "positionOnDevice": null,
+                    "portType": "rj45",
+                    "operationalState": "Active",
+                    "administrativeState": "Active",
+                    "usageState": "unreserved",
+                    "href": "https://127.0.1.1:8080/getPortById?id=33",
+                    "logicalPorts": [],
+                    "additionalAttributes": [],
+                    "portSpeed": null,
+                    "capacity": null
+                  }
+                }
+              ],
+              "additionalAttributes": []
+            }
+          ]
+        }
+      ],
+      "additionalAttributes": []
+    },
+    {
+      "name": "name-context_shelf_3",
+      "shelfPosition": 3,
+      "operationalState": "unassigned",
+      "administrativeState": "unassigned",
+      "href": "https://127.0.1.1:8080/getShelfById?id=21",
+      "usageState": "unassigned",
+      "slots": [],
+      "additionalAttributes": []
+    },
+    {
+      "name": "name-context_shelf_4",
+      "shelfPosition": 4,
+      "operationalState": "unassigned",
+      "administrativeState": "unassigned",
+      "href": "https://127.0.1.1:8080/getShelfById?id=22",
+      "usageState": "unassigned",
+      "slots": [],
+      "additionalAttributes": []
+    },
+    {
+      "name": "name-context_shelf_5",
+      "shelfPosition": 5,
+      "operationalState": "unassigned",
+      "administrativeState": "unassigned",
+      "href": "https://127.0.1.1:8080/getShelfById?id=23",
+      "usageState": "unassigned",
+      "slots": [],
+      "additionalAttributes": []
+    },
+    {
+      "name": "name-context_shelf_6",
+      "shelfPosition": 6,
+      "operationalState": "unassigned",
+      "administrativeState": "unassigned",
+      "href": "https://127.0.1.1:8080/getShelfById?id=24",
+      "usageState": "unassigned",
+      "slots": [],
+      "additionalAttributes": []
+    },
+    {
+      "name": "name-context_shelf_7",
+      "shelfPosition": 7,
+      "operationalState": "unassigned",
+      "administrativeState": "unassigned",
+      "href": "https://127.0.1.1:8080/getShelfById?id=25",
+      "usageState": "unassigned",
+      "slots": [],
+      "additionalAttributes": []
+    }
+  ],
+  "devicePorts": [],
+  "devicePluggables": [],
+  "resourceSpecification": {
+    "name": "isam 7360 fx-4",
+    "href": "https://127.0.1.1:8080/getModelById?id=0",
+    "@referredType": "ResourceSpecificationRef"
+  },
+  "relatedParty": {
+  }
+}
